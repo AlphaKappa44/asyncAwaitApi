@@ -24,15 +24,15 @@ body {
 /* div {
     display: flex;
 }
-
+ */ 
 h3 {
     display: flex;
 }
- */ 
+
 button {
-    font-size: 25px;
-    width: 10em;
-    height: 4em;
+    font-size: 16px;
+    width: 12em;
+    height: 3em;
     border-radius: 50px;
     color: rgb(255, 165, 0);
     border-left: 0.08em solid;
@@ -44,7 +44,7 @@ button {
 }
 
 span {
-    width: 15em;
+    width: 12em;
     border-radius: 50px;
 }
 
@@ -68,7 +68,8 @@ button::before {
 
 button:hover span {
     transform: translateX(0.15em);
-    filter: brightness(0.6);
+    color: #f0f;
+    filter: brightness(0.5);
 }
 
 button::after {
@@ -91,6 +92,12 @@ button span {
     justify-content: center;
     font-family: sans-serif;
     text-transform: capitalize;
-    transform: translateX(calc(0.15em * 3 - -1.92em * 3));
-    transition: 1.3s;
+    transform: translateX(calc(1em * 1 - -1.2em * 0.5));
+    transition: 0.5s;
+}
+
+#feed {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end
 }
